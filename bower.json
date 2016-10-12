@@ -1,7 +1,7 @@
 {
   "name": "ng-popover",
   "description": "Fully customizable and easy-to-use AngularJS 1.x directive for elegant multi-directional popovers.",
-  "main": "dist/angular-popover.min.js",
+  "main": ["dist/angular-popover.js", "dist/angular-popover.css"],
   "authors": [
     "Tarun Dugar"
   ],
