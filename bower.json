@@ -1,0 +1,22 @@
+{
+  "name": "ng-popover",
+  "description": "Fully customizable and easy-to-use AngularJS 1.x directive for elegant multi-directional popovers.",
+  "main": "dist/angular-popover.min.js",
+  "authors": [
+    "Tarun Dugar"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "javascript",
+    "angularjs"
+  ],
+  "homepage": "https://github.com/NorthMcCormick/ng-popover",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
