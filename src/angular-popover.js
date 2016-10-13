@@ -6,7 +6,9 @@
 		return {
 			restrict: 'A',
 			transclude: true,
-			scope: true,
+			scope: {
+				template: "@template"
+			},
 			template: '<div class="angular-popover-container"><div class="angular-popover hide-popover-element"><div ng-if="isTemplateUrl()" ng-include="getContentPopover()" class="angular-popover-template"></div><div ng-if="!isTemplateUrl()" class="angular-popover-template"></div></div><div class="angular-popover-triangle hide-popover-element" ng-class="getTriangleClass()"></div></div><ng-transclude></ng-transclude>',
 			link: function(scope, element, attrs) {
 
@@ -110,9 +112,9 @@
 
 				var createPopover = function() {
 					//if the template is supplied instead of templateUrl, set the popover innerHTML to the string passed in the 'template' attribute
-					if(attrs.template) {
+					if(scope.template) {
 						var templateElement = element[0].querySelector('.angular-popover-template');
-						templateElement.innerHTML = attrs.template;
+						templateElement.innerHTML = scope.template;
 					}
 
 					if(attrs.backgroundColor) {
