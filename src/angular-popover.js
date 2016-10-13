@@ -1,6 +1,6 @@
 ;(function() {
 
-	var app = angular.module('angular-popover', [])
+	var app = angular.module('angular-popover', []);
 
 	app.directive('angularPopover', ['$window', function($window) {
 		return {
@@ -42,19 +42,19 @@
 				//return the path of the popover template
 				scope.getContentPopover = function() {
 					return attrs.templateUrl;	
-				}
+				};
 
 				scope.isTemplateUrl = function() {
 					if(attrs.templateUrl) {
 						return true;
 					}
 					return false;
-				}
+				};
 
 				//depending upon the direction specified, attached the appropriate class to the popover 
 				scope.getTriangleClass = function() {
 					return 'angular-popover-triangle-' + attrs.direction;
-				}
+				};
 
 
 				if(closeOnMouseleave) {
@@ -160,8 +160,8 @@
 									triangle.style.left = -triangle_height + 'px'; 
 									break;
 					}
-				}
+				};
 			}
-		}
+		};
 	}]);
 })();
