@@ -4,12 +4,14 @@
 	height: 0;
 	left: 0;
 	z-index: 10000 !important;
+	white-space: nowrap;
 }
 
 .angular-popover {
 	position: absolute;
 	box-shadow: 0 0 7px 1px rgba(0, 0, 0, .2);
-	background-color: #fff
+	background-color: #FFFFFF;
+	width: auto;
 }
 
 .popover-floating-animation-top {
