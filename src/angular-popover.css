@@ -5,6 +5,8 @@
 	left: 0;
 	z-index: 10000 !important;
 	white-space: nowrap;
+
+	pointer-events: none;
 }
 
 .angular-popover {
